@@ -68,7 +68,6 @@ nav{
   text-transform: uppercase;
   font-size: calc(0.6*var(--font-size));
 }
-__________________________________
 
 main{
   display: flex;
@@ -93,9 +92,10 @@ main{
   right: 0; bottom: 12%;
 
   border: 1px solid white;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgb(180, 178, 178);
 }
 .header-reservation{
+  padding: 2%;
   font-size: calc(0.9*var(--font-size));
   /* flex-grow: 1; */
 }
