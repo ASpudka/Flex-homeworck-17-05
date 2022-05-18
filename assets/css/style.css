@@ -10,7 +10,7 @@ body{
 }
 :root{
   font-family: sans-serif;
-  font-size: 18px;
+  --font-size: 20px;
 
 }
 a{
@@ -50,17 +50,67 @@ nav{
   display: flex;
   justify-content: space-between;
 
-  font-size: 16px;
+  font-size: calc(0.8*var(--font-size));
 }
 .list-item{
   padding: 5px;
 }
-.header-button{
+.list-link{
+  display: inline-block;
+  padding: 0.2em;
+}
+.header-button, .button-reservation{
   padding: 5px 15px;
   border: 1px solid white;
   border-radius: 5%;
   background-color: rgba(255, 255, 255, 0);
  
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: calc(0.6*var(--font-size));
+}
+__________________________________
+
+main{
+  display: flex;
+ 
+}
+.main-section{
+  min-height: 70vh;
+ flex-grow: 1;
+ background-image: url(./../images/restaurant-in-sea.jpg);
+ background-position: bottom;
+}
+.reservation{
+  height: 100px;
+  width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  right: 0; bottom: 12%;
+
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+}
+.header-reservation{
+  font-size: calc(0.9*var(--font-size));
+  /* flex-grow: 1; */
+}
+.button-reservation{
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.footer{
+  padding: 10px;
+  margin-top: auto;
+  /* margin-top: auto; */
+  background-color: rgb(70, 68, 68);
+  text-align: center;
+  font-family:'Comic Sans MS';
 }
